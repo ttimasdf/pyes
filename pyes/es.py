@@ -585,6 +585,9 @@ class ES(object):
         if params:
             for k in params:
                 params[k] = str(params[k])
+
+        headers['Content-Type'] = 'application/json'
+
         #only for debug purpose
         request = RestRequest(method=Method._NAMES_TO_VALUES[method.upper()],
                               uri=path, parameters=params, headers=headers, body=body)
