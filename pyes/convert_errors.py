@@ -61,7 +61,7 @@ exceptions_by_type = {
     "resource_already_exists_exception": exceptions.IndexAlreadyExistsException,
     "reduce_search_phase_exception": exceptions.ReduceSearchPhaseException,
     "version_conflict_engine_exception": exceptions.VersionConflictEngineException,
-    "illegal_argument_exception": ElasticSearchIllegalArgumentException,
+    "illegal_argument_exception": exceptions.ElasticSearchIllegalArgumentException,
 }
 
 
